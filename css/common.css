@@ -1,1 +1,47 @@
 @charset "utf-8";
+
+#wrap {
+    width: 100vw;
+    height: 100vw;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: purple;
+    position: relative;
+}
+
+header>nav {
+    width: 70vw;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+main {
+    width: 100vw;
+    height: 700px;
+    text-align: center;
+    color: red;
+    background-color: green;
+}
+
+main>h1 {
+    font-size: 3em;
+}
+
+main>h2 {
+    font-size: 2em;
+}
+
+aside {
+    width: 200px;
+    height: 500px;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    background-color: yellow;
+}

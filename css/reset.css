@@ -20,8 +20,5 @@ a {
 body {
     overflow-x: hidden;
     overflow-y: scroll;
+    font-family: 'Nanum Gothic', sans-serif;
 }
-
-/* html {
-    color: #fff;
-} */
