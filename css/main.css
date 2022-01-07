@@ -1,2 +1,20 @@
 @charset "utf-8";
 
+.slide {
+    width: 25vw;
+    height: 35vw;
+    background-color: red;
+    position: relative;
+    margin: 10px auto;
+}
+
+.slide>li {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide>li:not(:first-child) {
+    display: none;
+}
