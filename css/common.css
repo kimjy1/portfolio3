@@ -1,15 +1,15 @@
 @charset "utf-8";
 
-#wrap {
-    width: 100vw;
-    height: 100vw;
-}
-
 header {
-    width: 100vw;
+    width: 100%;
     height: 100px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%);
+    transition: all .3s;
     background-color: purple;
-    position: relative;
 }
 
 header>nav {
@@ -21,27 +21,33 @@ header>nav {
     left: 20%;
 }
 
-main {
+#sidebar {
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: yellow;
+}
+
+#wrap {
+    width: 100vw;
+    height: 100vw;
+}
+
+#wrap main {
     width: 100vw;
     height: 1000px;
     text-align: center;
     color: red;
     background-color: green;
+    padding-top: 100px;
 }
 
-main>h1 {
+#wrap main>h1 {
     font-size: 3em;
 }
 
-main>h2 {
+#wrap main>h2 {
     font-size: 2em;
-}
-
-aside {
-    width: 200px;
-    height: 500px;
-    position: fixed;
-    top: 20%;
-    right: 0;
-    background-color: yellow;
 }
