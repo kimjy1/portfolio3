@@ -1,9 +1,9 @@
 @charset "utf-8";
 
+/* 메인 - 슬라이더 메뉴 중 첫번째 이미지(페이드인) */
 .slide {
     width: 25vw;
     height: 35vw;
-    background-color: red;
     position: relative;
     margin: 10px auto;
 }

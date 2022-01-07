@@ -1,3 +1,4 @@
+// 헤더 메뉴 스크립트 시작 - 스크롤 내리면 사라짐, 스크롤 올리면 생김
 var lastScrollTop = 0, delta = 15;
 
 $(window).scroll(function () {
@@ -14,7 +15,9 @@ $(window).scroll(function () {
     }
     lastScrollTop = scrollTop;
 });
+// 헤더 메뉴 스크립트 끝
 
+// 슬라이드 이미지 첫번째 스크립트 시작
 var i = 0;
 function slide() {
     i++;
@@ -25,3 +28,4 @@ function slide() {
     $('.slide li').eq(i - 1).stop().fadeOut('slow');
 }
 setInterval(slide, 10000);
+// 슬라이드 이미지 첫번째 스크립트 끝
