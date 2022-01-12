@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  <style>
+    li {
+      list-style: none;
+    }
+
+    .slide {
+      width: 1000px;
+      height: 1000px;
+      background-color: red;
+      position: relative;
+    }
+
+    .slide>li {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .slide>li:not(:first-child) {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="slide">
+    <li><img src="1.jpg" alt="slideImg1"></li>
+    <li><img src="2.jpg" alt="slideImg2"></li>
+    <li><img src="3.jpg" alt="slideImg3"></li>
+  </ul>
+  <script>
+    var i = 0;
+    function slide() {
+      i++;
+      if (i > $('.slide li:last').index()) {
+        i = 0;
+      }
+      $('.slide li').eq(i).stop().fadeIn('slow');
+      $('.slide li').eq(i - 1).stop().fadeOut('slow');
+    }
+    setInterval(slide, 20000);
+  </script>
+</body>
+
+</html>
